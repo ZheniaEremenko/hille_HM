@@ -41,7 +41,7 @@ const company = {
     ]
 };
 
-function findCompany(companyName) {
+function findCompanyByValue(companyName) {
     for (const client of company.clients) {
         if (client.name === companyName) {
             return client;
@@ -64,5 +64,5 @@ function findCompany(companyName) {
     return null;
 }
 
-const result = findCompany('Клієнт 2 Kristian');
+const result = findCompanyByValue('Клієнт 2 Kristian');
 console.log(result);
